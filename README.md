@@ -260,4 +260,6 @@ flowchart TD
 
 **B. Giri Anoop**
 
-Cybersecurity Student | SOC Analyst Aspirant | Identity Security Enthusiast
+Cloud Identity Security Researcher | SOC Analyst Aspirant
+
+Focused on Microsoft Entra ID, Identity Governance, Incident Investigation, Audit Log Analysis, Identity Threat Detection, and Cloud Security.
