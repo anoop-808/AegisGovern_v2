@@ -256,6 +256,55 @@ flowchart TD
 
 ---
 
+## Lessons Learned
+
+Throughout this project, several key identity security lessons were observed:
+
+### OAuth Consent Abuse
+
+* User consent can introduce significant identity risk.
+* Third-party applications should be reviewed before approval.
+* Application permissions must be continuously monitored.
+
+### Dormant Account Abuse
+
+* Former employee accounts increase organizational attack surface.
+* Regular account lifecycle reviews are critical.
+* Dormant accounts should be disabled or removed promptly.
+
+### Excessive Information Exposure
+
+* Excessive visibility enables attacker reconnaissance.
+* Least privilege principles should be applied to directory access.
+* User enumeration can support future attacks.
+
+### Privilege Escalation
+
+* Administrative role assignments require continuous monitoring.
+* Audit logs provide valuable evidence during investigations.
+* Privileged access reviews help prevent abuse.
+
+---
+
+## Detection Gaps & Future Improvements
+
+### Current Gaps
+
+* OAuth consent activity required manual review.
+* Dormant account discovery relied on periodic assessment.
+* Privilege escalation detection depended on audit log investigation.
+* Identity reconnaissance activities lacked automated alerting.
+
+### Future Improvements
+
+* Implement automated alerting for privileged role assignments.
+* Monitor OAuth application registrations and consent grants.
+* Automate dormant account identification.
+* Improve visibility into identity reconnaissance activity.
+* Integrate Entra ID logs with a SIEM platform for continuous monitoring.
+
+---
+
 ## Author
 
 **B. Giri Anoop**

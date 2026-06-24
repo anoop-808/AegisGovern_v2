@@ -109,6 +109,70 @@ Result:
 
 ---
 
+## Lessons Learned
+
+### OAuth Consent Abuse
+
+- User consent can introduce significant identity risk.
+- Application permissions should be reviewed before approval.
+- User consent policies should be restricted.
+
+### Dormant Account Abuse
+
+- Former employee accounts increase attack surface.
+- Regular identity reviews are essential.
+- Account lifecycle management should be enforced.
+
+### Excessive Information Exposure
+
+- Low-privileged users should not have unnecessary visibility.
+- Directory information can support attacker reconnaissance.
+- Least privilege principles should be continuously reviewed.
+
+### Privilege Escalation
+
+- Administrative role assignments must be monitored.
+- Audit logs provide critical investigation evidence.
+- Privileged access should be reviewed regularly.
+
+---
+
+## Detection Gaps & Future Improvements
+
+### Gap 1 - Automated Alerting
+
+Current State:
+Role assignment activity required manual review.
+
+Improvement:
+Implement automated alerts for privileged role assignments.
+
+### Gap 2 - OAuth Monitoring
+
+Current State:
+OAuth application review was manual.
+
+Improvement:
+Create alerts for new application registrations and permission grants.
+
+### Gap 3 - Dormant Account Detection
+
+Current State:
+Inactive accounts were identified through review.
+
+Improvement:
+Automate dormant account identification and reporting.
+
+### Gap 4 - Identity Visibility Monitoring
+
+Current State:
+User enumeration activities were manually observed.
+
+Improvement:
+Implement monitoring for unusual identity discovery activity.
+
+---
+
 ## Recommendations
 
 1. Enforce least privilege access.
