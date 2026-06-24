@@ -224,6 +224,36 @@ AegisGovern_v2
 └── README.md
 ```
 
+## Architecture Diagram
+
+```mermaid
+flowchart TD
+
+    A[Microsoft Entra ID Tenant]
+
+    A --> B[Users]
+    A --> C[Groups]
+    A --> D[Roles]
+
+    B --> E[Attack Simulations]
+    C --> E
+    D --> E
+
+    E --> F[OAuth Consent Abuse]
+    E --> G[Dormant Account Abuse]
+    E --> H[Excessive Permissions]
+    E --> I[Privilege Escalation]
+
+    F --> J[Audit Logs]
+    G --> J
+    H --> J
+    I --> J
+
+    J --> K[Investigation]
+    K --> L[Remediation]
+    L --> M[Incident Reports]
+```
+
 ---
 
 ## Author
