@@ -8,6 +8,17 @@ The project demonstrates identity attack detection, privilege management, audit 
 
 ---
 
+## Risk Summary
+
+| Attack Scenario | Severity |
+|----------------|----------|
+| OAuth Consent Abuse | High |
+| Dormant Account Abuse | Medium |
+| Excessive Permissions & Information Exposure | Medium |
+| Privilege Escalation via Role Assignment | Critical |
+
+---
+
 ## Environment
 
 - Microsoft Entra ID Tenant
@@ -21,6 +32,17 @@ The project demonstrates identity attack detection, privilege management, audit 
 ---
 
 ## Attack Scenarios Performed
+
+## MITRE ATT&CK Coverage
+
+| Attack Scenario | MITRE Technique | Technique ID |
+|----------------|----------------|-------------|
+| OAuth Consent Abuse | Steal Application Access Token | T1528 |
+| Dormant Account Abuse | Valid Accounts: Cloud Accounts | T1078.004 |
+| Excessive Permissions & Information Exposure | Account Discovery: Cloud Account | T1087.004 |
+| Privilege Escalation via Role Assignment | Account Manipulation: Additional Cloud Roles | T1098.003 |
+
+---
 
 ### Attack 1 - OAuth Consent Abuse
 

@@ -1,5 +1,19 @@
 # Incident Report – Attack 3: Excessive Information Exposure
 
+## Severity
+
+Medium
+
+## Incident Metrics
+
+Detection Time: 8 Minutes
+
+Investigation Time: 12 Minutes
+
+Containment Time: 3 Minutes
+
+Incident Status: Resolved
+
 ## Incident Summary
 
 An Intern User account was able to enumerate users, groups, roles, and administrative information within the tenant.

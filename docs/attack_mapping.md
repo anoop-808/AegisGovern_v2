@@ -19,3 +19,26 @@ Evidence Folder: evidence/attack3_excessive_permissions
 Affected User: Contractor User
 Attack Type: Excessive Administrative Role Assignment
 Evidence Folder: evidence/attack4_privilege_escalation
+
+# MITRE ATT&CK Mapping
+
+| Attack | MITRE Technique | Technique ID |
+|----------|----------|----------|
+| OAuth Consent Abuse | Steal Application Access Token | T1528 |
+| Dormant Account Abuse | Valid Accounts: Cloud Accounts | T1078.004 |
+| Excessive Permissions & Information Exposure | Account Discovery: Cloud Account | T1087.004 |
+| Privilege Escalation via Role Assignment | Account Manipulation: Additional Cloud Roles | T1098.003 |
+
+## Coverage Summary
+
+This project demonstrates multiple cloud identity attack techniques mapped to the MITRE ATT&CK framework.
+
+Focus Areas:
+
+- Initial Access
+- Valid Accounts
+- Account Discovery
+- Privilege Escalation
+- Identity Abuse
+- Cloud Security Monitoring
+- Incident Investigation

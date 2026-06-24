@@ -38,9 +38,34 @@ The project focuses on Identity and Access Management (IAM), privilege managemen
 
 ## Attack Scenarios
 
+---
+
+## MITRE ATT&CK Mapping
+
+| Attack Scenario | MITRE Technique | Technique ID |
+|----------------|----------------|-------------|
+| OAuth Consent Abuse | Steal Application Access Token | T1528 |
+| Dormant Account Abuse | Valid Accounts: Cloud Accounts | T1078.004 |
+| Excessive Permissions & Information Exposure | Account Discovery: Cloud Account | T1087.004 |
+| Privilege Escalation via Role Assignment | Account Manipulation: Additional Cloud Roles | T1098.003 |
+
+---
+
+## Risk Severity Classification
+
+| Attack Scenario | Severity |
+|----------------|----------|
+| OAuth Consent Abuse | High |
+| Dormant Account Abuse | Medium |
+| Excessive Permissions & Information Exposure | Medium |
+| Privilege Escalation via Role Assignment | Critical |
+
+---
 ### Attack 1 - OAuth Consent Abuse
 
 **Affected User:** Priya Finance
+
+**MITRE ATT&CK:** T1528 - Steal Application Access Token
 
 Simulated a malicious OAuth application requesting delegated permissions through a fake rewards portal.
 
@@ -55,11 +80,15 @@ Simulated a malicious OAuth application requesting delegated permissions through
 
 `evidence/attack1_oauth_consent`
 
+![Attack 1](images/attack1_preview.png)
+
 ---
 
 ### Attack 2 - Dormant Account Abuse
 
 **Affected User:** John Former
+
+**MITRE ATT&CK:** T1078.004 - Valid Accounts: Cloud Accounts
 
 Simulated risks associated with inactive employee accounts remaining in the environment after departure.
 
@@ -74,11 +103,15 @@ Simulated risks associated with inactive employee accounts remaining in the envi
 
 `evidence/attack2_dormant_account`
 
+![Attack 2](images/attack2_preview.png)
+
 ---
 
 ### Attack 3 - Excessive Permissions & Information Exposure
 
 **Affected User:** Intern User
+
+**MITRE ATT&CK:** T1087.004 - Account Discovery: Cloud Account
 
 Demonstrated how a low-privileged account could enumerate users, groups, and directory information.
 
@@ -93,11 +126,15 @@ Demonstrated how a low-privileged account could enumerate users, groups, and dir
 
 `evidence/attack3_excessive_permissions`
 
+![Attack 3](images/attack3_preview.png)
+
 ---
 
 ### Attack 4 - Privilege Escalation via Role Assignment
 
 **Affected User:** Contractor User
+
+**MITRE ATT&CK:** T1098.003 - Account Manipulation: Additional Cloud Roles
 
 Simulated unauthorized assignment of the User Administrator role and investigated the resulting privilege escalation.
 
@@ -111,6 +148,8 @@ Simulated unauthorized assignment of the User Administrator role and investigate
 **Evidence**
 
 `evidence/attack4_privilege_escalation`
+
+![Attack 4](images/attack4_preview.png)
 
 ---
 

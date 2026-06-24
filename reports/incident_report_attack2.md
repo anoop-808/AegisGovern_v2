@@ -1,5 +1,19 @@
 # Incident Report – Attack 2: Dormant Account Abuse
 
+## Severity
+
+Medium
+
+## Incident Metrics
+
+Detection Time: 15 Minutes
+
+Investigation Time: 20 Minutes
+
+Containment Time: 5 Minutes
+
+Incident Status: Resolved
+
 ## Incident Summary
 
 A former employee account (John Former) remained in the tenant and represented a dormant account risk.

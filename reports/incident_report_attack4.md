@@ -1,5 +1,19 @@
 # Incident Report – Attack 4: Privilege Escalation
 
+## Severity
+
+Critical
+
+## Incident Metrics
+
+Detection Time: 2 Minutes
+
+Investigation Time: 8 Minutes
+
+Containment Time: 2 Minutes
+
+Incident Status: Resolved
+
 ## Incident Summary
 
 A contractor account was intentionally assigned the User Administrator role to simulate privilege escalation.

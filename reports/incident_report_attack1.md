@@ -1,5 +1,19 @@
 # Incident Report – Attack 1: OAuth Consent Abuse
 
+## Severity
+
+High
+
+## Incident Metrics
+
+Detection Time: 5 Minutes
+
+Investigation Time: 10 Minutes
+
+Containment Time: 2 Minutes
+
+Incident Status: Resolved
+
 ## Incident Summary
 
 A finance department user (Priya Finance) was targeted through a malicious OAuth application named Rewards Portal.
